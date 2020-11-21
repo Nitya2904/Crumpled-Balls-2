@@ -15,7 +15,7 @@ function preload() {
 }
 
 function setup() {
-	createCanvas(1200, 700);
+	createCanvas(1200, 680);
 
 
 	engine = Engine.create();
@@ -49,7 +49,11 @@ function draw() {
 	dustbin3.display()
 	ground.display();
 	paper.display();
-	image(dustbinImg,1005,430,200,238);
+	image(dustbinImg,1015,437,200,238);
+
+	//if (paper.isTouching(dustbin1) || paper.isTouching(dustbin2) || paper.isTouching(dustbin3)) {
+	//	paper.destroy();
+	//}
 }
 
 function keyPressed() {
